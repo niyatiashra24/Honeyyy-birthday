@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Honeyyy 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Georgia, serif;
+            background: linear-gradient(
+                135deg,
+                #fff0f5,
+                #ffd6e7,
+                #fff5f8
+            );
+            color: #873956;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 650px;
+            margin: 35px auto;
+            padding: 30px 22px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid white;
+            border-radius: 28px;
+            box-shadow: 0 12px 40px #d66b8c30;
+        }
+
+        .heart {
+            font-size: 55px;
+            animation: beat 1.2s infinite;
+        }
+
+        @keyframes beat {
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        h1 {
+            color: #d94f85;
+            font-size: clamp(30px, 8vw, 45px);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #c44c7a;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        button {
+            border: none;
+            border-radius: 30px;
+            padding: 13px 21px;
+            margin: 8px;
+            background: #e76b9a;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px #e76b9a35;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #c94d7c;
+            transform: translateY(-2px);
+        }
+
+        .letter {
+            display: none;
+            text-align: left;
+            background: #fff1f6;
+            border: 1px solid #f9d6e4;
+            border-radius: 18px;
+            padding: 20px;
+            margin-top: 20px;
+            animation: appear 0.6s ease;
+        }
+
+        #surprise {
+            display: none;
+            padding: 22px 8px;
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sparkle {
+            font-size: 24px;
+            letter-spacing: 8px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #f5c6d7;
+            margin: 25px 0;
+        }
+
+        audio {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        footer {
+            font-size: 13px;
+            margin-top: 28px;
+            color: #a65d78;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 18px auto;
+                padding: 24px 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sparkle">✨ 💗 ✨</div>
+
+        <div class="heart">💖</div>
+
+        <h1>Happy Birthday, Honeyyy! 🎂</h1>
+
+        <p>
+            To my favourite person 🥹💕
+            <br>
+            I made a little something just for you.
+        </p>
+
+        <p>Are you ready for your tiny surprise? 🎀</p>
+
+        <button onclick="openLetter()">
+            Open your love letter 💌
+        </button>
+
+        <div class="letter" id="letter">
+
+            <h2>To my Honeyyy, from Madam 💗</h2>
+
+            <p>
+                Happiest birthday, my Honeyyy! 🎂💕
+            </p>
+
+            <p>
+                I wish I could put all my feelings into words,
+                but sometimes words just aren't enough.
+                You are such a special person to me, and
+                I'm so happy that you are a part of my life.
+            </p>
+
+            <p>
+                I hope this new year of your life brings you
+                happiness, beautiful memories, success, and
+                a thousand reasons to smile. Never forget
+                how special you are.
+            </p>
+
+            <p>
+                I hope you feel extra loved today,
+                because you deserve all the happiness
+                in the world. 🥹💗
+            </p>
+
+            <p>
+                Happy birthday once again, Honeyyy.
+                I hope your day is filled with smiles,
+                laughter, and beautiful memories. 🎀
+            </p>
+
+            <p style="text-align: right;">
+                With lots of love,<br>
+                Your Madam 💋💕
+            </p>
+
+        </div>
+
+        <hr>
+
+        <h2>A little birthday music 🎵</h2>
+
+        <p>
+            Play a song and enjoy your little surprise. 💗
+        </p>
+
+        <audio controls loop>
+            <source
+                src="birthday-song.mp3.mpeg"
+                type="audio/mpeg"
+            >
+            Your browser does not support audio.
+        </audio>
+
+        <p style="font-size: 12px;">
+            Your song will play once you add the audio file.
+        </p>
+
+        <hr>
+
+        <h2>One last thing, Honeyyy... 🎁</h2>
+
+        <p>
+            There's one more little message waiting for you.
+        </p>
+
+        <button onclick="revealSurprise()">
+            Tap for your surprise 🎁
+        </button>
+
+        <div id="surprise">
+
+            <div class="heart">💝</div>
+
+            <h2>A little reminder for you 💌</h2>
+
+            <p>
+                Out of all the people in this world,
+                I'm really glad I get to know you. 💗
+            </p>
+
+            <p>
+                You are appreciated, you matter,
+                and you deserve the happiest birthday ever.
+            </p>
+
+            <p>
+                Keep smiling, birthday boy! 🥹🎂
+            </p>
+
+            <p>
+                This little website was made especially
+                for you, with love from Madam. 💗
+            </p>
+
+            <div class="sparkle">💗 ✨ 💗</div>
+
+        </div>
+
+        <footer>
+            Made with love by Madam, just for Honeyyy 💕
+        </footer>
+
+    </div>
+
+    <script>
+        function openLetter() {
+            const letter = document.getElementById("letter");
+
+            if (letter.style.display === "block") {
+                letter.style.display = "none";
+            } else {
+                letter.style.display = "block";
+            }
+        }
+
+        function revealSurprise() {
+            const surprise = document.getElementById("surprise");
+
+            surprise.style.display = "block";
+
+            surprise.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+            for (let i = 0; i < 25; i++) {
+                const heart = document.createElement("div");
+
+                heart.textContent = [
+                    "💗",
+                    "💕",
+                    "💖",
+                    "✨"
+                ][Math.floor(Math.random() * 4)];
+
+                heart.style.position = "fixed";
+                heart.style.left = Math.random() * 95 + "vw";
+                heart.style.top = "-30px";
+                heart.style.fontSize = "24px";
+                heart.style.pointerEvents = "none";
+                heart.style.zIndex = "10";
+                heart.style.transition =
+                    "transform 3s ease, opacity 3s ease";
+
+                document.body.appendChild(heart);
+
+                requestAnimationFrame(() => {
+                    heart.style.transform =
+                        "translateY(" +
+                        (window.innerHeight + 50) +
+                        "px) rotate(360deg)";
+
+                    heart.style.opacity = "0";
+                });
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 3200);
+            }
+        }
+    </script>
+
+</body>
+</html>
